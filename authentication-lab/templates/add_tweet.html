@@ -5,6 +5,35 @@
     <title>Title</title>
 </head>
 <body>
-    Great Job!
+    <form method="post" action="/add_tweet">
+
+        <!-- Subheading -->
+        <p >
+            Please fill up your information below to sign up.
+        </p>
+
+        <!-- Title-->
+        <div>
+            <label>Title*</label>
+            <div>
+                <input type="Title"  name="Title" id="TitleStr" required>
+            </div>
+        </div>
+
+
+        <!-- Text-->
+        <div>
+            <label>Text*</label>
+            <div>
+                <input type="Text"  name="Text" id="TextStr" maxlength="280">
+            </div>
+        </div>
+
+                <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+
 </body>
 </html>
