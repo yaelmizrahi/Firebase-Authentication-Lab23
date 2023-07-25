@@ -55,7 +55,6 @@ def signup():
                     "bio" : bio
             }
             db.child("Users").child(UID).set(user)
-            print("hey")
             return redirect(url_for('add_tweet'))
        except:
            error = "Authentication failed"
@@ -73,7 +72,6 @@ def add_tweet():
        text = request.form['Text']
        try:
             UID = login_session['user']['localId']
-            print("helo")
             tweet = {"Title" : title,
                     "text" : text,
                     "uid" : UID
